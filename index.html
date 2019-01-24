@@ -7,21 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <img src="assets/img/humblereservelogo.png" alt="" id="header">
-            <h1>WELCOME TO HUMBLE RESERVE</h1>
-            <h2>COMING SOON!</h2>
+    <div class="bgimg">
+        <div class= "middle">
+            
+            <img src="/assets/img/new3.png" alt="">
+            <h1>COMING SOON</h1>
 
+            <hr>
+            <p id="demo" style='font-size: 30px'></p>
             <div id="sign_up">
                 <h2>Sign up for an update on the grand opening</h2>
+                <div class="row">
+                    <div class="col s12">
+                      <form action="/" method="POST">
+                        <input type="text" id="name" name="burger_name" placeholder="Enter your email address">
+                        <button type="submit" class="addBurgerButton">Submit</button>
+                      </form>
+                    </div>
+                  </div>
                 <form action="submit">Email Address</form>
             </div>
 
             <div id="invest">
-                <h2>For investment opportunity please reach us at info@humblereserve.com</h2>
+                <p>For investment opportunity please reach us at info@humblereserve.com</h2>
             </div>
         </div>
     </div>
 </body>
+
+<script>
+const countDownDate = new Date("Feb 28, 2019 00:00:00").getTime();
+const countDownFunction = setInterval( () => {
+    const now = new Date().getTime();
+
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24)) ;
+    const hours = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60 * 60)) / 1000);
+
+    document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+    if (distance < 0) {
+        clearInterval(countDownFunction);
+        document.getElementById('demo').innerHTML = 'EXPIRED';
+    }
+
+
+}, 1000);
+
+
+
+</script>
 </html>
