@@ -4,29 +4,62 @@ body, html {
     padding: 0;
 }
 
-.bgimg {
-    background: url(https://wbenarto.github.io/HR_Landing/assets/img/background-869586_1280.png);
+.img {
+    background-color: #245345;
+    background: url(/assets/img/shopping\ ladies.png);
+    opacity : 0.3;
     height: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
-    color: #fff;
     font-family: Prime;
-
 }
+
+.img:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(54, 146, 172, 0.7);
+  }
+
+.email {
+    border-radius: 10px;
+}
+
+input#name {
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.addEmail {
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgba(54, 146, 172, 0.7);
+    padding: 10px;
+    width: 140px;
+}
+
+
+
 
 .middle {
     position: absolute;
+    opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;   
+    width: 800px;
 }
 
-h1 {
-    font-size: 40px;
+h1#soon {
+    font-size: 50px;
     letter-spacing: 30px;
     font-weight: 100;
+    padding-bottom: 20px;
+
 }
 
 #demo {
@@ -39,3 +72,38 @@ hr {
     width: 80%;
 
 }
+
+/* Slogan Text */
+.slogan {
+    padding-bottom: 40px;
+    font-size: 24px;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 32px;
+}
+
+#sign_up {
+    padding: 0;
+}
+
+#content {
+    border: 5px #fff solid ;
+    border-radius: 20px;
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    opacity: 1;
+    height: 100%;
+
+}
+
+.img2 {
+    background: #ffffff;
+    
+}
+
+#invest {
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
