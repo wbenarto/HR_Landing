@@ -20,7 +20,7 @@ body, html {
     position: absolute;
     left: 0; right: 0;
     top: 0; bottom: 0;
-    background: rgba(54, 146, 172, 0.7);
+    background: rgba(54, 146, 172, 0.931);
   }
 
 .email {
@@ -87,9 +87,9 @@ hr {
 }
 
 #content {
-    border: 5px #fff solid ;
+    border: 2px white solid ;
     border-radius: 20px;
-    background: white;
+    background: rgb(212, 209, 209);
     padding-top: 50px;
     padding-bottom: 10px;
     opacity: 1;
@@ -98,12 +98,13 @@ hr {
 }
 
 .img2 {
-    background: #ffffff;
+    background: rgb(211, 211, 211);
     
 }
 
 #invest {
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 0;
+    font-size: 36px;
 }
 
